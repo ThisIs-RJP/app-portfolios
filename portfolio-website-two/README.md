@@ -1,3 +1,3 @@
 # Preview
 
-![image](images/image.png)
+![image](images-readme/image.png)
