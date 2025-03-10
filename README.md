@@ -7,5 +7,5 @@
 
 cd <choice_portfolio>
 npm install
-npm run
+npm start
 ```
