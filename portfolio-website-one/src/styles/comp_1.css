@@ -1,0 +1,222 @@
+.comp1 {
+    width: 100vw;
+    height: 93vh;
+
+    overflow: hidden;
+    display: flex;
+
+    opacity: 0;
+
+    animation: reveal-comp1 1s ease-in-out forwards;
+    animation-delay: 5s;
+}
+
+@keyframes reveal-comp1 {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.comp-text-container {
+    width: 70%;
+    height: 100%;
+
+    /* background-color: yellow; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: reveal-left-comp 1s ease-in-out forwards;
+}
+
+@keyframes reveal-left-comp {
+    0% {
+        transform: translateX(-10%);
+        opacity: 0
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+.comp-text-text-box {
+    width: 80%;
+    height: 80%;
+
+}
+
+#introduction {
+    font-weight: 600;
+
+    font-size: 120%;
+}
+
+#description {
+    width: 80%;
+    height: 30%;
+
+    font-size: 120%;
+
+    /* background-color: purple; */
+}
+
+.contacts {
+    width: 40%;
+    height: 45%;
+
+    margin-top: 2%;
+
+}
+
+.contacts.contact {
+    width: 100%;
+    height: 25%;
+
+    display: flex;
+}
+
+.contact-icon {
+    width: 20%;
+    height: 100%;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-icon-icon {
+    width: 60%;
+}
+
+.contact-text {
+    width: 75%;
+    height: 100%;
+
+    margin-left: 5%;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.profile-box {
+    width: 30%;
+    height: 100%;
+
+    /* background-color: blue; */
+    animation: reveal-profile 1s ease-in-out forwards;
+}
+
+@keyframes reveal-profile {
+    0% {
+        opacity: 0;
+        transform: translateX(-10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.profile-picture {
+    width: 100%;
+    height: 50%;
+
+    /* background-color: purple; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile-picture {
+    width: 70%;
+    height: auto;
+
+    border-radius: 50%;
+}
+
+.profile-name {
+    margin-left: 5%;
+    width: 60%;
+    height: 20%;
+
+    /* background-color: red; */
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    font-size: 200%;
+    font-weight: 700;
+}
+
+.profile-college {
+    width: 90%;
+    height: 10%;
+
+    margin-left: 5%;
+    /* background-color: red; */
+    
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.profile-year {
+    width: 35%;
+    height: 100%;
+
+    /* background-color: purple; */
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    font-size: 150%;
+}
+
+.profile-line {
+    width: 1px;
+    height: 80%;
+
+    margin-left: 2%;
+    margin-right: 2%;
+
+    background-color: black;
+}
+
+.profile-course {
+    width: 60%;
+    height: 100%;
+
+    /* background-color: brown; */
+
+    font-size: 150%;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.profile-detail {
+    width: 60%;
+    height: 10%;
+
+    margin-left: 5%;
+    margin-top: 5%;
+
+    /* background-color: brown; */
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}

@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Parkinsans:wght@300..800&display=swap');
+
+* {
+    font-family: "Geist Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.main {
+    background-color: rgb(27, 27, 27);
+
+    width: 100vw;
+    height: 100vh;
+
+    overflow-y: hidden;
+}
+
+#city {
+    width: 35%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    right: 50;
+    transform: translateY(-50%);
+    padding: 0.8vw;
+    background-color: white;
+    
+    opacity: 0;
+    animation: reveal-city 1s forwards;
+}
+
+@keyframes reveal-city {
+    0% {
+        opacity: 0;
+        transform: translateY(-50%) translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(-50%) translateX(0);
+    }
+}
+
+#surname {
+    color: rgb(177, 177, 177);
+    transform-origin: top right;
+}
+
+#socials {
+    width: 40vw;  /* Match the width of name-line */
+    position: absolute;
+    top: 50%;
+    right: 5vw;  /* Aligns with name-line */
+    height: 8vh;
+    color: white;
+
+    /* background-color: brown; */
+
+    display: flex;
+    justify-content: right;
+}
+
+#socials-icon {
+    /* width: 40%; */
+    height: 8vh;
+
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+}
+
+.section-one {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+
+    overflow: hidden;
+}
+
+.center-image {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    text-align: right;
+    top: 50%
+}
+
+.desktop-left {
+    /* background-color: yellow; */
+    width: 50vw;
+    height: 100vh;
+
+    overflow: hidden;
+}
+
+.desktop-right {
+    /* background-color: red; */
+    width: 50vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-line {
+    width: 40vw;
+    height: 10vw;
+    margin-top: -25%;
+    position: relative;
+
+    /* padding-bottom: 30px; */
+    border-bottom: 2px solid white;
+
+    /* background-color: red; */
+    opacity: 0;
+
+    animation: 1s forwards extend-line;
+    animation-delay: 0.8s;
+}
+
+@keyframes extend-line {
+    0% {
+        width: 0;
+    }
+    100% {
+        opacity: 1;
+        width: 40vw;
+    }
+}
+
+.text-box {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px;
+    width: 40%;
+    /* background-color: rgb(27, 27, 27); */
+    padding-bottom: 2px solid white;
+
+    opacity: 0;
+    color: white;
+
+    top: -10;
+    animation: 0.5s forwards reveal-name;
+    animation-delay:  1s;
+
+}
+
+@keyframes reveal-name {
+    0% {
+        top: -10;
+    }
+
+    /* 90% {
+        opacity: 0.5
+    } */
+
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.text-box section {
+    display: flex;
+    justify-content: right;  
+    text-align: right;
+    margin-bottom: 1vw;
+    font-size: 180%;
+}
+
+.desktop-whole-box {
+    /* background-color: red; */
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+
+    /* opacity: 50%; */
+}
+
+.desktop-whole-box img {
+    width: 20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+    padding: 0.7vw;
+
+    opacity: 0;
+
+    animation: 1s forwards reveal-pfp;
+    animation-delay: 0.6s;
+}
+
+@keyframes reveal-pfp {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -40%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
