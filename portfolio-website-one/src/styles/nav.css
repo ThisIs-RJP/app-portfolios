@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.navbar {
+    width: 100vw;
+    height: 7vh;
+
+    background-color: white;
+    /* background-color:red; */
+    display: flex;
+    /* overflow: hidden; */
+    position: relative;
+
+    animation: reveal-nav 0.5s ease-in-out forwards;
+    animation-delay: 5s;
+}
+
+@keyframes reveal-nav {
+    0% {
+        background-color: white;
+    }
+    100% {
+        background-color: rgb(255, 255, 189);
+    }
+}
+
+.stacked-box-1 {
+    /* width: 15%;
+    height: 100%; */
+
+    width: 90vw;
+    height: 90vh;
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    position: absolute;
+    z-index: 4;
+    margin-left: 5%;
+    opacity: 0;
+
+    font-weight: 700;
+
+    /* background-color: rgb(255, 255, 189); */
+
+    animation: de-extend 5s forwards;
+}
+
+@keyframes de-extend {
+    0% {
+        font-size: 300%;
+        width: 90vw;
+        height: 90vh;
+    }
+
+    20% {
+        font-size: 300%;
+        opacity: 1;
+        width: 90vw;
+        height: 90vh;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        width: 10%;
+        height: 100%;
+    }
+}
+
+.stacked-box-2 {
+    width: 15%;
+    height: 100%;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 3;
+    background-color: rgb(255, 255, 189);
+
+    opacity: 0;
+
+    animation: slide-out-two 1s ease-in-out forwards;
+    animation-delay: 5.5s;
+}
+
+.stacked-box-3 {
+    width: 15%;
+    height: 100%;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(255, 255, 189);
+
+    opacity: 0;
+
+    animation: slide-out-one 1s ease-in-out forwards;
+    animation-delay: 6s;
+}
+
+@keyframes slide-out-one {
+    0% {
+        opacity: 0;
+        margin-left: 5%;
+    }
+    100% {
+        opacity: 1;
+        margin-left: 30%;
+    }
+}
+
+@keyframes slide-out-two {
+    0% {
+        margin-left: 5%;
+    }
+    100% {
+        opacity: 1;
+        margin-left: 15%;
+    }
+}
+
+.slash {
+    margin-left: 4%;
+    margin-right: 4%;
+    font-size: 150%;
+    font-weight: 100;
+}
